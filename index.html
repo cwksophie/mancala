@@ -1,1 +1,58 @@
-<h1>Hello!</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Python Mancala</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="header">
+    <span>Python Mancala Page</span>
+</div>
+
+<div class="content clearfix">
+    <div class="column text">
+        <h3>My Project</h3>
+        <p>This is my Python Mancala project I made in coding class.  You can 
+        download the game and try it out yorself!</p>
+        <h3>How to Play</h3>
+        <p>This version is a two player game of mancala so start by grabbing a 
+        friend to play with you.  Choose who is going to go first.  Each player 
+        makes a moving by choosing a space (1 through 6).  You can see the space
+        numbers printed above or below the board in the terminal.  Once you 
+        choose a space, the program will take all the stones stored in that 
+        space and move around the board, dropping on stone in each space that it 
+        passes.  If your last stone lands in your goal, you get another turn.  
+        If your last stone lands in an empty space on your side and the other 
+        player has stones in the space opposite, you get all those stones as well
+        as your last stone added to your goal.</p>
+        <h3>The Code</h3>
+        <p>This project was pretty hard to make.  I had to make lots of different
+        functions.  The psudocode for the project looked like this: </p>
+            <pre>
+Main Function:
+    initialize board
+
+    while game is not over:
+        print board
+        get player input
+        make move and update board
+        switch to next player
+            </pre>
+        <p>The first function I made was the <code>print_board()</code> 
+        function.  I had to use string formatting to get the board to print out 
+        nicely.  Next I wrote a function for getting the user input.  I used
+        error handling to make sure that the user could only enter a number and 
+        I also had to check if they choose a legitimate space.</p>
+        <p>The hardest function to write was the update board function.  Figuring
+        out how to move around the board took a lot of work and careful manipulation
+        of list indecies.  I also had to take into account all the unusual cases
+        like the last stone ending in a goal or an empty space.</p>
+    </div>
+    <img src="mancala_game.png" class="column image"></img>
+</div>
+
+</body>
+</html>
+</body>
